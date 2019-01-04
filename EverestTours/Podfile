@@ -10,6 +10,7 @@ pod 'Firebase/Core'
 pod 'FirebaseUI'
 pod 'FirebaseUI/Auth'
 pod 'FirebaseUI/Facebook'
+pod 'JTAppleCalendar', '~> 7.0'
 
   target 'EverestToursTests' do
     inherit! :search_paths

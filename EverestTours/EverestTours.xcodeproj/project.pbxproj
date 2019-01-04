@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A04353C21CB10E30020F17D /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04353B21CB10E30020F17D /* UserManager.swift */; };
+		0A04353F21CB12F30020F17D /* TourDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A04353E21CB12F30020F17D /* TourDetail.storyboard */; };
+		0A04354121CB15190020F17D /* SharedConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04354021CB15190020F17D /* SharedConstants.swift */; };
+		0A04354321CB16A50020F17D /* TourDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04354221CB16A50020F17D /* TourDetailViewController.swift */; };
+		0A04354521CB1F680020F17D /* TourUbicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04354421CB1F680020F17D /* TourUbicationTableViewCell.swift */; };
+		0A04354821CBEED00020F17D /* RouteTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04354721CBEED00020F17D /* RouteTableDelegate.swift */; };
 		0A40229B21BF236600B9CC8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A40229A21BF236600B9CC8F /* GoogleService-Info.plist */; };
 		0A88185121BF17EA000B706C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88185021BF17EA000B706C /* AppDelegate.swift */; };
 		0A88185321BF17EA000B706C /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88185221BF17EA000B706C /* AuthenticationViewController.swift */; };
@@ -19,6 +25,21 @@
 		0AA8F38C21C02BD400ED5501 /* FUICustomMethodPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8F38B21C02BD400ED5501 /* FUICustomMethodPickerView.xib */; };
 		0AA8F39621C051DC00ED5501 /* FUIAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8F39521C051DC00ED5501 /* FUIAuthenticationManager.swift */; };
 		0AA8F39821C053D200ED5501 /* FUIAuthenticationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8F39721C053D200ED5501 /* FUIAuthenticationConstants.swift */; };
+		0ADC4F7521C413F40046684E /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7421C413F40046684E /* Calendar.storyboard */; };
+		0ADC4F7721C416730046684E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7621C416730046684E /* CalendarCell.swift */; };
+		0ADC4F7921C4183B0046684E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7821C4183A0046684E /* CalendarViewController.swift */; };
+		0ADC4F7C21C419070046684E /* AppDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7B21C419070046684E /* AppDateFormatter.swift */; };
+		0ADC4F7E21C419FA0046684E /* AppDateFormatterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7D21C419FA0046684E /* AppDateFormatterConstants.swift */; };
+		0ADC4F8021C41F0C0046684E /* CalendarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7F21C41F0C0046684E /* CalendarConstants.swift */; };
+		0AFED59121C9D68E00DD2535 /* TourList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFED59021C9D68E00DD2535 /* TourList.storyboard */; };
+		0AFED59321C9D6A500DD2535 /* TourListConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED59221C9D6A500DD2535 /* TourListConstants.swift */; };
+		0AFED59521C9D6D600DD2535 /* TourListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED59421C9D6D600DD2535 /* TourListViewController.swift */; };
+		0AFED59821C9D80100DD2535 /* TourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED59721C9D80100DD2535 /* TourManager.swift */; };
+		0AFED59A21C9D93500DD2535 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED59921C9D93500DD2535 /* NetworkManager.swift */; };
+		0AFED59D21C9DA0A00DD2535 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED59C21C9DA0A00DD2535 /* Tour.swift */; };
+		0AFED59F21C9DBE900DD2535 /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED59E21C9DBE900DD2535 /* TourTableViewCell.swift */; };
+		0AFED5A121C9DF1600DD2535 /* TypeDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED5A021C9DF1600DD2535 /* TypeDefinitions.swift */; };
+		0AFED5A321CA040B00DD2535 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED5A221CA040B00DD2535 /* Guide.swift */; };
 		12887B72D92C1714341C149E /* Pods_EverestTours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597282FCCA4E2D16D1660408 /* Pods_EverestTours.framework */; };
 		62A90A6A8C50FEBACFEED343 /* Pods_EverestToursTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4C13BB82C7D23988216D8B /* Pods_EverestToursTests.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A04353B21CB10E30020F17D /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0A04353E21CB12F30020F17D /* TourDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TourDetail.storyboard; sourceTree = "<group>"; };
+		0A04354021CB15190020F17D /* SharedConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConstants.swift; sourceTree = "<group>"; };
+		0A04354221CB16A50020F17D /* TourDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDetailViewController.swift; sourceTree = "<group>"; };
+		0A04354421CB1F680020F17D /* TourUbicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourUbicationTableViewCell.swift; sourceTree = "<group>"; };
+		0A04354721CBEED00020F17D /* RouteTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTableDelegate.swift; sourceTree = "<group>"; };
 		0A40229A21BF236600B9CC8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A40229C21BF3BA500B9CC8F /* EverestTours.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EverestTours.entitlements; sourceTree = "<group>"; };
 		0A88184D21BF17EA000B706C /* EverestTours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverestTours.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +78,21 @@
 		0AA8F38B21C02BD400ED5501 /* FUICustomMethodPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FUICustomMethodPickerView.xib; sourceTree = "<group>"; };
 		0AA8F39521C051DC00ED5501 /* FUIAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUIAuthenticationManager.swift; sourceTree = "<group>"; };
 		0AA8F39721C053D200ED5501 /* FUIAuthenticationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUIAuthenticationConstants.swift; sourceTree = "<group>"; };
+		0ADC4F7421C413F40046684E /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		0ADC4F7621C416730046684E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		0ADC4F7821C4183A0046684E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		0ADC4F7B21C419070046684E /* AppDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDateFormatter.swift; sourceTree = "<group>"; };
+		0ADC4F7D21C419FA0046684E /* AppDateFormatterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDateFormatterConstants.swift; sourceTree = "<group>"; };
+		0ADC4F7F21C41F0C0046684E /* CalendarConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarConstants.swift; sourceTree = "<group>"; };
+		0AFED59021C9D68E00DD2535 /* TourList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TourList.storyboard; sourceTree = "<group>"; };
+		0AFED59221C9D6A500DD2535 /* TourListConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListConstants.swift; sourceTree = "<group>"; };
+		0AFED59421C9D6D600DD2535 /* TourListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListViewController.swift; sourceTree = "<group>"; };
+		0AFED59721C9D80100DD2535 /* TourManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourManager.swift; sourceTree = "<group>"; };
+		0AFED59921C9D93500DD2535 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0AFED59C21C9DA0A00DD2535 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		0AFED59E21C9DBE900DD2535 /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
+		0AFED5A021C9DF1600DD2535 /* TypeDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDefinitions.swift; sourceTree = "<group>"; };
+		0AFED5A221CA040B00DD2535 /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
 		1638C19244651991DA19DAB5 /* Pods-EverestToursTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverestToursTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EverestToursTests/Pods-EverestToursTests.debug.xcconfig"; sourceTree = "<group>"; };
 		597282FCCA4E2D16D1660408 /* Pods_EverestTours.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EverestTours.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB7801D10428EF381B2A2F3 /* Pods-EverestToursTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverestToursTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EverestToursTests/Pods-EverestToursTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +121,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A04353D21CB12DB0020F17D /* TourDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0A04354621CBEE060020F17D /* TableDelegates */,
+				0A04353E21CB12F30020F17D /* TourDetail.storyboard */,
+				0A04354221CB16A50020F17D /* TourDetailViewController.swift */,
+				0A04354421CB1F680020F17D /* TourUbicationTableViewCell.swift */,
+			);
+			path = TourDetail;
+			sourceTree = "<group>";
+		};
+		0A04354621CBEE060020F17D /* TableDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				0A04354721CBEED00020F17D /* RouteTableDelegate.swift */,
+			);
+			path = TableDelegates;
+			sourceTree = "<group>";
+		};
 		0A88184421BF17EA000B706C = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +165,12 @@
 			children = (
 				0A88185F21BF17EC000B706C /* Info.plist */,
 				0A40229A21BF236600B9CC8F /* GoogleService-Info.plist */,
+				0A88185021BF17EA000B706C /* AppDelegate.swift */,
 				0AA8F39121C0509B00ED5501 /* Screens */,
 				0AA8F39021C0509500ED5501 /* Shared */,
 				0AA8F38F21C0507C00ED5501 /* Asserts */,
 				0AA8F38E21C0504000ED5501 /* Data */,
 				0AA8F38D21C0501F00ED5501 /* Resources */,
-				0A88185021BF17EA000B706C /* AppDelegate.swift */,
 			);
 			path = EverestTours;
 			sourceTree = "<group>";
@@ -151,7 +212,11 @@
 		0AA8F39021C0509500ED5501 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0AFED59B21C9D9DD00DD2535 /* Models */,
+				0AFED59621C9D7ED00DD2535 /* Managers */,
+				0ADC4F7A21C418F60046684E /* Dates */,
 				0AA8F39421C051B600ED5501 /* FUIAuth */,
+				0A04354021CB15190020F17D /* SharedConstants.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -159,6 +224,9 @@
 		0AA8F39121C0509B00ED5501 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0A04353D21CB12DB0020F17D /* TourDetail */,
+				0AFED58F21C9D66F00DD2535 /* TourList */,
+				0ADC4F7321C413DD0046684E /* Calendar */,
 				0AA8F39321C050E400ED5501 /* Authentication */,
 				0AA8F39221C050BF00ED5501 /* FUICustomMethodPicker */,
 			);
@@ -190,6 +258,57 @@
 				0AA8F39721C053D200ED5501 /* FUIAuthenticationConstants.swift */,
 			);
 			path = FUIAuth;
+			sourceTree = "<group>";
+		};
+		0ADC4F7321C413DD0046684E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC4F7421C413F40046684E /* Calendar.storyboard */,
+				0ADC4F7621C416730046684E /* CalendarCell.swift */,
+				0ADC4F7821C4183A0046684E /* CalendarViewController.swift */,
+				0ADC4F7F21C41F0C0046684E /* CalendarConstants.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		0ADC4F7A21C418F60046684E /* Dates */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC4F7B21C419070046684E /* AppDateFormatter.swift */,
+				0ADC4F7D21C419FA0046684E /* AppDateFormatterConstants.swift */,
+			);
+			path = Dates;
+			sourceTree = "<group>";
+		};
+		0AFED58F21C9D66F00DD2535 /* TourList */ = {
+			isa = PBXGroup;
+			children = (
+				0AFED59021C9D68E00DD2535 /* TourList.storyboard */,
+				0AFED59221C9D6A500DD2535 /* TourListConstants.swift */,
+				0AFED59421C9D6D600DD2535 /* TourListViewController.swift */,
+				0AFED59E21C9DBE900DD2535 /* TourTableViewCell.swift */,
+			);
+			path = TourList;
+			sourceTree = "<group>";
+		};
+		0AFED59621C9D7ED00DD2535 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0AFED59721C9D80100DD2535 /* TourManager.swift */,
+				0AFED59921C9D93500DD2535 /* NetworkManager.swift */,
+				0A04353B21CB10E30020F17D /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0AFED59B21C9D9DD00DD2535 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AFED59C21C9DA0A00DD2535 /* Tour.swift */,
+				0AFED5A021C9DF1600DD2535 /* TypeDefinitions.swift */,
+				0AFED5A221CA040B00DD2535 /* Guide.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		1283B16DA90237F60AB4D986 /* Frameworks */ = {
@@ -302,10 +421,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADC4F7521C413F40046684E /* Calendar.storyboard in Resources */,
+				0A04353F21CB12F30020F17D /* TourDetail.storyboard in Resources */,
 				0A88185E21BF17EC000B706C /* LaunchScreen.storyboard in Resources */,
 				0AA8F38C21C02BD400ED5501 /* FUICustomMethodPickerView.xib in Resources */,
 				0A40229B21BF236600B9CC8F /* GoogleService-Info.plist in Resources */,
 				0A88185B21BF17EC000B706C /* Assets.xcassets in Resources */,
+				0AFED59121C9D68E00DD2535 /* TourList.storyboard in Resources */,
 				0A88185621BF17EA000B706C /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +457,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
@@ -354,6 +477,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
@@ -445,12 +569,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADC4F8021C41F0C0046684E /* CalendarConstants.swift in Sources */,
+				0ADC4F7921C4183B0046684E /* CalendarViewController.swift in Sources */,
+				0AFED5A321CA040B00DD2535 /* Guide.swift in Sources */,
 				0AA8F39821C053D200ED5501 /* FUIAuthenticationConstants.swift in Sources */,
+				0ADC4F7721C416730046684E /* CalendarCell.swift in Sources */,
+				0ADC4F7C21C419070046684E /* AppDateFormatter.swift in Sources */,
+				0AFED59821C9D80100DD2535 /* TourManager.swift in Sources */,
+				0A04354121CB15190020F17D /* SharedConstants.swift in Sources */,
 				0AA8F39621C051DC00ED5501 /* FUIAuthenticationManager.swift in Sources */,
 				0A88185921BF17EA000B706C /* EverestTours.xcdatamodeld in Sources */,
 				0AA8F38A21C02AA100ED5501 /* FUICustomMethodPickerViewController.swift in Sources */,
 				0A88185321BF17EA000B706C /* AuthenticationViewController.swift in Sources */,
+				0AFED59521C9D6D600DD2535 /* TourListViewController.swift in Sources */,
+				0A04354821CBEED00020F17D /* RouteTableDelegate.swift in Sources */,
+				0AFED59321C9D6A500DD2535 /* TourListConstants.swift in Sources */,
+				0AFED59A21C9D93500DD2535 /* NetworkManager.swift in Sources */,
+				0AFED59F21C9DBE900DD2535 /* TourTableViewCell.swift in Sources */,
+				0ADC4F7E21C419FA0046684E /* AppDateFormatterConstants.swift in Sources */,
+				0A04354321CB16A50020F17D /* TourDetailViewController.swift in Sources */,
 				0A88185121BF17EA000B706C /* AppDelegate.swift in Sources */,
+				0AFED5A121C9DF1600DD2535 /* TypeDefinitions.swift in Sources */,
+				0A04353C21CB10E30020F17D /* UserManager.swift in Sources */,
+				0A04354521CB1F680020F17D /* TourUbicationTableViewCell.swift in Sources */,
+				0AFED59D21C9DA0A00DD2535 /* Tour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
