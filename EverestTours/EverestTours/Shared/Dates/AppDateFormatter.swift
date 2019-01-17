@@ -21,6 +21,11 @@ class AppDateFormatter {
         return formatter.date(from: date)
     }
     
+    class func getShortDateName(for date: Date) -> String {
+        formatter.dateFormat = AppDateFormatterConstants.fullDateFormat
+        return formatter.string(from: date)
+    }
+    
     class func getYearName(of date: Date) -> String {
         formatter.dateFormat = AppDateFormatterConstants.yearNameFormat
         return formatter.string(from: date)

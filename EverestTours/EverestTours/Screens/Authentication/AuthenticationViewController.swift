@@ -42,7 +42,7 @@ class AuthenticationViewController: UIViewController {
 
 extension AuthenticationViewController: SuccessfulAuthenticationDelegate {
     func proceed(withAuthDataResult authDataResult: AuthDataResult?) {
-        print("Success: ", authDataResult?.user)
+        performSegue(withIdentifier: AuthenticationConstants.calendarSegue, sender: self)
     }
 }
 

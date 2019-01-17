@@ -8,15 +8,9 @@
 
 import UIKit
 
-protocol SelectedTourDelegate {
-    func selectedTour(_ tour: Tour)
-}
-
 class TourTableViewCell: UITableViewCell {
     
     static let identifier = "TourTableViewCell"
-    
-    var selectedTourDelegate: SelectedTourDelegate?
     
     @IBOutlet weak var hourMinuteLabel: UILabel!
     @IBOutlet weak var guideNameLabel: UILabel!
@@ -30,9 +24,6 @@ class TourTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        if let selectedTourDelegate = selectedTourDelegate, let tour = tour {
-            selectedTourDelegate.selectedTour(tour)
-        }
     }
     
     func setTour(_ tour: Tour) {

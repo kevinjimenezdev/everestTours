@@ -13,7 +13,7 @@
         <!--Ib Calendar Data Source-->
         <scene sceneID="sBS-jL-Hbj">
             <objects>
-                <viewController title=" Calendar ViewController" id="KmE-EU-hAq" customClass="CalendarViewController" customModule="EverestTours" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title=" Calendar" id="KmE-EU-hAq" customClass="CalendarViewController" customModule="EverestTours" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NCB-Di-cFk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

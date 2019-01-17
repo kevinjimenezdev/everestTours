@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct TourListConstants {
+    static let tourDetailsSegue = "tourDetails"
+}

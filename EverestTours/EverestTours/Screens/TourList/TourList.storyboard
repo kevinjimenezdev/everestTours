@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tour List View Controller-->
+        <!--Tour List-->
         <scene sceneID="S7u-74-KVU">
             <objects>
-                <tableViewController id="npJ-a3-Qpo" customClass="TourListViewController" customModule="EverestTours" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Tour List" id="npJ-a3-Qpo" customClass="TourListViewController" customModule="EverestTours" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cIN-nP-ymG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,10 +60,21 @@
                             <outlet property="delegate" destination="npJ-a3-Qpo" id="nff-5S-p0H"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="TFF-Iu-dBE" kind="show" identifier="tourDetails" id="rHn-fM-Dpg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Vv-XE-dE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="80.799999999999997" y="-103.89805097451276"/>
+        </scene>
+        <!--TourDetail-->
+        <scene sceneID="cvZ-9a-J8O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TourDetail" id="TFF-Iu-dBE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KmY-1k-OJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="-104"/>
         </scene>
     </scenes>
 </document>

@@ -17,28 +17,25 @@
                     <view key="view" contentMode="scaleToFill" id="b0e-fb-dqy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="up5-PA-idD">
-                                <rect key="frame" x="82" y="115" width="211" height="170"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="up5-PA-idD" secondAttribute="height" multiplier="211:170" id="Ydf-Sd-QMx"/>
-                                    <constraint firstAttribute="height" constant="170" id="u9y-3s-Tuw"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="up5-PA-idD" firstAttribute="top" secondItem="vEr-0e-1Te" secondAttribute="top" constant="51" id="IGD-Q3-5bn"/>
-                            <constraint firstItem="up5-PA-idD" firstAttribute="centerX" secondItem="vEr-0e-1Te" secondAttribute="centerX" id="UyO-tW-0Ck"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vEr-0e-1Te"/>
                     </view>
                     <navigationItem key="navigationItem" id="cRW-8Q-uzf"/>
+                    <connections>
+                        <segue destination="NMM-x6-onN" kind="show" identifier="calendar" animates="NO" id="fIH-i7-umb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071.2" y="133.5832083958021"/>
+        </scene>
+        <!--AppTabBar-->
+        <scene sceneID="hnq-L4-kU4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AppTabBar" id="NMM-x6-onN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sS-g6-LgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qKi-U5-a3E">
