@@ -13,7 +13,7 @@ import FirebaseUI
 class AuthenticationViewController: UIViewController {
     
     // MARK: - Constants
-    private let AuthenticationMethods = [FUIFacebookAuth()]
+    private let AuthenticationMethods = [FUIFacebookAuth(), FUIGoogleAuth()]
     private let AuthenticationManager = FUIAuthenticationManager()
     
     // MARK: - Properties
@@ -29,7 +29,7 @@ class AuthenticationViewController: UIViewController {
     // MARK: - Authentication
     func setupAuthUI() {
         authUI = FUIAuth.defaultAuthUI()
-        authUI?.providers = AuthenticationMethods
+        authUI?.providers = AuthenticationMethods as! [FUIAuthProvider]
         authUI?.delegate = AuthenticationManager
         AuthenticationManager.delegate = self
     }
