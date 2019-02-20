@@ -9,5 +9,5 @@
 import Foundation
 
 struct AuthenticationConstants {
-    static let calendarSegue = "calendar"
+    static let appTabBarSegue = "appTabBar"
 }

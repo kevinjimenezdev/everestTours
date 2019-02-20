@@ -38,11 +38,25 @@ class AuthenticationViewController: UIViewController {
         let controller = authUI!.authViewController()
         self.present(controller, animated: false, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let appTabBarController = segue.destination as? UITabBarController {
+            UserManager.sharedInstance.getUser() {user, error in 
+                if (user != nil) {
+                    appTabBarController.selectedIndex = AppTabBarViewController.tabIndexes.calendar.rawValue
+                } else {
+                    appTabBarController.selectedIndex = AppTabBarViewController.tabIndexes.profile.rawValue
+                }
+            }
+        }
+    }
 }
 
 extension AuthenticationViewController: SuccessfulAuthenticationDelegate {
     func proceed(withAuthDataResult authDataResult: AuthDataResult?) {
-        performSegue(withIdentifier: AuthenticationConstants.calendarSegue, sender: self)
+        UserManager.sharedInstance.getUser() {user, error in
+            self.performSegue(withIdentifier: AuthenticationConstants.appTabBarSegue, sender: self)
+        }
     }
 }
 

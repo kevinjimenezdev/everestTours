@@ -159,9 +159,9 @@
                         <viewLayoutGuide key="safeArea" id="CVN-0Q-IyK"/>
                     </view>
                     <connections>
-                        <outlet property="calendarView" destination="H5p-iW-LbM" id="W9Z-Hu-dhZ"/>
-                        <outlet property="monthLabel" destination="PwW-Gr-jYj" id="kwW-br-Jht"/>
-                        <outlet property="yearLabel" destination="o4F-CZ-bhJ" id="lZB-QX-Bci"/>
+                        <outlet property="calendarView" destination="H5p-iW-LbM" id="f7s-H5-qf7"/>
+                        <outlet property="monthLabel" destination="PwW-Gr-jYj" id="WiH-Xw-Qds"/>
+                        <outlet property="yearLabel" destination="o4F-CZ-bhJ" id="fSN-jl-Jqw"/>
                         <segue destination="OdS-rx-RVZ" kind="show" identifier="toTourList" animates="NO" id="m4h-IN-isO"/>
                     </connections>
                 </viewController>

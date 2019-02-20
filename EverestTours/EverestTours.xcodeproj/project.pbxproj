@@ -17,6 +17,8 @@
 		0A04354321CB16A50020F17D /* TourDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04354221CB16A50020F17D /* TourDetailViewController.swift */; };
 		0A04354521CB1F680020F17D /* TourUbicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04354421CB1F680020F17D /* TourUbicationTableViewCell.swift */; };
 		0A04354821CBEED00020F17D /* RouteTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04354721CBEED00020F17D /* RouteTableDelegate.swift */; };
+		0A0F8899220B3B6600657993 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F8898220B3B6600657993 /* UserProfile.swift */; };
+		0A1FD33B2211DA370045D5C6 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FD33A2211DA370045D5C6 /* ImageProcessing.swift */; };
 		0A40229B21BF236600B9CC8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A40229A21BF236600B9CC8F /* GoogleService-Info.plist */; };
 		0A516E8721E7FF8F0093E358 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A516E8621E7FF8F0093E358 /* Reservation.swift */; };
 		0A856A4021DFEE0D0065D29F /* AuthenticacionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A856A3F21DFEE0D0065D29F /* AuthenticacionConstants.swift */; };
@@ -26,7 +28,16 @@
 		0A88185921BF17EA000B706C /* EverestTours.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A88185721BF17EA000B706C /* EverestTours.xcdatamodeld */; };
 		0A88185B21BF17EC000B706C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A88185A21BF17EC000B706C /* Assets.xcassets */; };
 		0A88185E21BF17EC000B706C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A88185C21BF17EC000B706C /* LaunchScreen.storyboard */; };
-		0A88186921BF17EC000B706C /* EverestToursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A88186821BF17EC000B706C /* EverestToursTests.swift */; };
+		0A8AC033220B8FCF002D25C1 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC032220B8FCF002D25C1 /* FirestoreManager.swift */; };
+		0A8AC036220CAD90002D25C1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC035220CAD90002D25C1 /* String.swift */; };
+		0A8AC038220CADEF002D25C1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC037220CADEF002D25C1 /* UIImage.swift */; };
+		0A8AC03B220CAE7D002D25C1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC03A220CAE7D002D25C1 /* Data.swift */; };
+		0A8AC03F220CD505002D25C1 /* FSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC03E220CD505002D25C1 /* FSModel.swift */; };
+		0A8AC041220CE03F002D25C1 /* FirebaseCollectionIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC040220CE03F002D25C1 /* FirebaseCollectionIdentifiers.swift */; };
+		0A8AC043220CEAC9002D25C1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC042220CEAC9002D25C1 /* User.swift */; };
+		0A8AC045220CED39002D25C1 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC044220CED39002D25C1 /* AppError.swift */; };
+		0A8AC047220CF3BD002D25C1 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC046220CF3BD002D25C1 /* Encodable.swift */; };
+		0A8AC04B220DF44A002D25C1 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8AC04A220DF44A002D25C1 /* Decodable.swift */; };
 		0AA8816421E65787008F1189 /* TourReservationList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8816321E65787008F1189 /* TourReservationList.storyboard */; };
 		0AA8816621E65F0E008F1189 /* TourReservationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8816521E65F0E008F1189 /* TourReservationListViewController.swift */; };
 		0AA8816821E6655A008F1189 /* TourReservationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8816721E6655A008F1189 /* TourReservationTableCell.swift */; };
@@ -51,18 +62,7 @@
 		0AFED5A121C9DF1600DD2535 /* TypeDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED5A021C9DF1600DD2535 /* TypeDefinitions.swift */; };
 		0AFED5A321CA040B00DD2535 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED5A221CA040B00DD2535 /* Guide.swift */; };
 		12887B72D92C1714341C149E /* Pods_EverestTours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597282FCCA4E2D16D1660408 /* Pods_EverestTours.framework */; };
-		62A90A6A8C50FEBACFEED343 /* Pods_EverestToursTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4C13BB82C7D23988216D8B /* Pods_EverestToursTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0A88186521BF17EC000B706C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A88184521BF17EA000B706C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A88184C21BF17EA000B706C;
-			remoteInfo = EverestTours;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A00326521ECDDB000E27A4C /* AppTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppTabBar.storyboard; sourceTree = "<group>"; };
@@ -75,6 +75,8 @@
 		0A04354221CB16A50020F17D /* TourDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDetailViewController.swift; sourceTree = "<group>"; };
 		0A04354421CB1F680020F17D /* TourUbicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourUbicationTableViewCell.swift; sourceTree = "<group>"; };
 		0A04354721CBEED00020F17D /* RouteTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTableDelegate.swift; sourceTree = "<group>"; };
+		0A0F8898220B3B6600657993 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		0A1FD33A2211DA370045D5C6 /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
 		0A40229A21BF236600B9CC8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A40229C21BF3BA500B9CC8F /* EverestTours.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EverestTours.entitlements; sourceTree = "<group>"; };
 		0A516E8621E7FF8F0093E358 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
@@ -87,9 +89,16 @@
 		0A88185A21BF17EC000B706C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A88185D21BF17EC000B706C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A88185F21BF17EC000B706C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A88186421BF17EC000B706C /* EverestToursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverestToursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A88186821BF17EC000B706C /* EverestToursTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverestToursTests.swift; sourceTree = "<group>"; };
-		0A88186A21BF17EC000B706C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8AC032220B8FCF002D25C1 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		0A8AC035220CAD90002D25C1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0A8AC037220CADEF002D25C1 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		0A8AC03A220CAE7D002D25C1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		0A8AC03E220CD505002D25C1 /* FSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSModel.swift; sourceTree = "<group>"; };
+		0A8AC040220CE03F002D25C1 /* FirebaseCollectionIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionIdentifiers.swift; sourceTree = "<group>"; };
+		0A8AC042220CEAC9002D25C1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0A8AC044220CED39002D25C1 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		0A8AC046220CF3BD002D25C1 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		0A8AC04A220DF44A002D25C1 /* Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		0AA8816321E65787008F1189 /* TourReservationList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TourReservationList.storyboard; sourceTree = "<group>"; };
 		0AA8816521E65F0E008F1189 /* TourReservationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReservationListViewController.swift; sourceTree = "<group>"; };
 		0AA8816721E6655A008F1189 /* TourReservationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourReservationTableCell.swift; sourceTree = "<group>"; };
@@ -127,14 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12887B72D92C1714341C149E /* Pods_EverestTours.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A88186121BF17EC000B706C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62A90A6A8C50FEBACFEED343 /* Pods_EverestToursTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				0A88184F21BF17EA000B706C /* EverestTours */,
-				0A88186721BF17EC000B706C /* EverestToursTests */,
 				0A88184E21BF17EA000B706C /* Products */,
 				C7F14DEAB858FDACE6C43215 /* Pods */,
 				1283B16DA90237F60AB4D986 /* Frameworks */,
@@ -193,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				0A88184D21BF17EA000B706C /* EverestTours.app */,
-				0A88186421BF17EC000B706C /* EverestToursTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,13 +212,33 @@
 			path = EverestTours;
 			sourceTree = "<group>";
 		};
-		0A88186721BF17EC000B706C /* EverestToursTests */ = {
+		0A8AC034220CAD84002D25C1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0A88186821BF17EC000B706C /* EverestToursTests.swift */,
-				0A88186A21BF17EC000B706C /* Info.plist */,
+				0A8AC035220CAD90002D25C1 /* String.swift */,
+				0A8AC037220CADEF002D25C1 /* UIImage.swift */,
+				0A8AC03A220CAE7D002D25C1 /* Data.swift */,
+				0A8AC046220CF3BD002D25C1 /* Encodable.swift */,
+				0A8AC04A220DF44A002D25C1 /* Decodable.swift */,
 			);
-			path = EverestToursTests;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A8AC039220CAE59002D25C1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A8AC044220CED39002D25C1 /* AppError.swift */,
+				0A1FD33A2211DA370045D5C6 /* ImageProcessing.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A8AC03D220CD4EF002D25C1 /* FSModels */ = {
+			isa = PBXGroup;
+			children = (
+				0A8AC03E220CD505002D25C1 /* FSModel.swift */,
+			);
+			path = FSModels;
 			sourceTree = "<group>";
 		};
 		0AA8816221E65761008F1189 /* TourReservationList */ = {
@@ -245,7 +264,10 @@
 		0AA8F38E21C0504000ED5501 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0A8AC03D220CD4EF002D25C1 /* FSModels */,
 				0A88185721BF17EA000B706C /* EverestTours.xcdatamodeld */,
+				0A8AC032220B8FCF002D25C1 /* FirestoreManager.swift */,
+				0A8AC040220CE03F002D25C1 /* FirebaseCollectionIdentifiers.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -261,6 +283,8 @@
 		0AA8F39021C0509500ED5501 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0A8AC039220CAE59002D25C1 /* Helpers */,
+				0A8AC034220CAD84002D25C1 /* Extensions */,
 				0AFED59B21C9D9DD00DD2535 /* Models */,
 				0AFED59621C9D7ED00DD2535 /* Managers */,
 				0ADC4F7A21C418F60046684E /* Dates */,
@@ -361,6 +385,8 @@
 				0AFED5A021C9DF1600DD2535 /* TypeDefinitions.swift */,
 				0AFED5A221CA040B00DD2535 /* Guide.swift */,
 				0A516E8621E7FF8F0093E358 /* Reservation.swift */,
+				0A0F8898220B3B6600657993 /* UserProfile.swift */,
+				0A8AC042220CEAC9002D25C1 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -408,25 +434,6 @@
 			productReference = 0A88184D21BF17EA000B706C /* EverestTours.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A88186321BF17EC000B706C /* EverestToursTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A88187021BF17EC000B706C /* Build configuration list for PBXNativeTarget "EverestToursTests" */;
-			buildPhases = (
-				4C82BECF294381E149F3A9F1 /* [CP] Check Pods Manifest.lock */,
-				0A88186021BF17EC000B706C /* Sources */,
-				0A88186121BF17EC000B706C /* Frameworks */,
-				0A88186221BF17EC000B706C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A88186621BF17EC000B706C /* PBXTargetDependency */,
-			);
-			name = EverestToursTests;
-			productName = EverestToursTests;
-			productReference = 0A88186421BF17EC000B706C /* EverestToursTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -445,10 +452,6 @@
 							};
 						};
 					};
-					0A88186321BF17EC000B706C = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 0A88184C21BF17EA000B706C;
-					};
 				};
 			};
 			buildConfigurationList = 0A88184821BF17EA000B706C /* Build configuration list for PBXProject "EverestTours" */;
@@ -465,7 +468,6 @@
 			projectRoot = "";
 			targets = (
 				0A88184C21BF17EA000B706C /* EverestTours */,
-				0A88186321BF17EC000B706C /* EverestToursTests */,
 			);
 		};
 /* End PBXProject section */
@@ -486,13 +488,6 @@
 				0AFED59121C9D68E00DD2535 /* TourList.storyboard in Resources */,
 				0AA8816421E65787008F1189 /* TourReservationList.storyboard in Resources */,
 				0A88185621BF17EA000B706C /* Authentication.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A88186221BF17EC000B706C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,24 +540,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EverestTours/Pods-EverestTours-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C82BECF294381E149F3A9F1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EverestToursTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E6824930B67CA2E44E726861 /* [CP] Copy Pods Resources */ = {
@@ -627,16 +604,24 @@
 				0ADC4F8021C41F0C0046684E /* CalendarConstants.swift in Sources */,
 				0AA8816621E65F0E008F1189 /* TourReservationListViewController.swift in Sources */,
 				0ADC4F7921C4183B0046684E /* CalendarViewController.swift in Sources */,
+				0A8AC04B220DF44A002D25C1 /* Decodable.swift in Sources */,
+				0A8AC041220CE03F002D25C1 /* FirebaseCollectionIdentifiers.swift in Sources */,
 				0AFED5A321CA040B00DD2535 /* Guide.swift in Sources */,
 				0AA8F39821C053D200ED5501 /* FUIAuthenticationConstants.swift in Sources */,
 				0A856A4021DFEE0D0065D29F /* AuthenticacionConstants.swift in Sources */,
+				0A8AC038220CADEF002D25C1 /* UIImage.swift in Sources */,
+				0A8AC045220CED39002D25C1 /* AppError.swift in Sources */,
+				0A8AC03B220CAE7D002D25C1 /* Data.swift in Sources */,
 				0ADC4F7721C416730046684E /* CalendarCell.swift in Sources */,
 				0ADC4F7C21C419070046684E /* AppDateFormatter.swift in Sources */,
 				0AFED59821C9D80100DD2535 /* TourManager.swift in Sources */,
 				0A04354121CB15190020F17D /* SharedConstants.swift in Sources */,
+				0A8AC033220B8FCF002D25C1 /* FirestoreManager.swift in Sources */,
+				0A1FD33B2211DA370045D5C6 /* ImageProcessing.swift in Sources */,
 				0AA8F39621C051DC00ED5501 /* FUIAuthenticationManager.swift in Sources */,
 				0A88185921BF17EA000B706C /* EverestTours.xcdatamodeld in Sources */,
 				0A00326F21ED018800E27A4C /* ProfileViewController.swift in Sources */,
+				0A8AC036220CAD90002D25C1 /* String.swift in Sources */,
 				0AA8F38A21C02AA100ED5501 /* FUICustomMethodPickerViewController.swift in Sources */,
 				0A88185321BF17EA000B706C /* AuthenticationViewController.swift in Sources */,
 				0AA8816A21E676A7008F1189 /* TourReservationListConstants.swift in Sources */,
@@ -645,36 +630,24 @@
 				0A04354821CBEED00020F17D /* RouteTableDelegate.swift in Sources */,
 				0AFED59321C9D6A500DD2535 /* TourListConstants.swift in Sources */,
 				0AA8816821E6655A008F1189 /* TourReservationTableCell.swift in Sources */,
+				0A8AC043220CEAC9002D25C1 /* User.swift in Sources */,
 				0AFED59A21C9D93500DD2535 /* NetworkManager.swift in Sources */,
 				0AFED59F21C9DBE900DD2535 /* TourTableViewCell.swift in Sources */,
+				0A8AC047220CF3BD002D25C1 /* Encodable.swift in Sources */,
+				0A8AC03F220CD505002D25C1 /* FSModel.swift in Sources */,
 				0ADC4F7E21C419FA0046684E /* AppDateFormatterConstants.swift in Sources */,
 				0A04354321CB16A50020F17D /* TourDetailViewController.swift in Sources */,
 				0A516E8721E7FF8F0093E358 /* Reservation.swift in Sources */,
 				0A88185121BF17EA000B706C /* AppDelegate.swift in Sources */,
 				0AFED5A121C9DF1600DD2535 /* TypeDefinitions.swift in Sources */,
+				0A0F8899220B3B6600657993 /* UserProfile.swift in Sources */,
 				0A04353C21CB10E30020F17D /* UserManager.swift in Sources */,
 				0A04354521CB1F680020F17D /* TourUbicationTableViewCell.swift in Sources */,
 				0AFED59D21C9DA0A00DD2535 /* Tour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A88186021BF17EC000B706C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A88186921BF17EC000B706C /* EverestToursTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0A88186621BF17EC000B706C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A88184C21BF17EA000B706C /* EverestTours */;
-			targetProxy = 0A88186521BF17EC000B706C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0A88185421BF17EA000B706C /* Authentication.storyboard */ = {
@@ -853,50 +826,6 @@
 			};
 			name = Release;
 		};
-		0A88187121BF17EC000B706C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1638C19244651991DA19DAB5 /* Pods-EverestToursTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QJKHQR3S5H;
-				INFOPLIST_FILE = EverestToursTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.avantica.mobile.EverestToursTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EverestTours.app/EverestTours";
-			};
-			name = Debug;
-		};
-		0A88187221BF17EC000B706C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BB7801D10428EF381B2A2F3 /* Pods-EverestToursTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QJKHQR3S5H;
-				INFOPLIST_FILE = EverestToursTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.avantica.mobile.EverestToursTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EverestTours.app/EverestTours";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -914,15 +843,6 @@
 			buildConfigurations = (
 				0A88186E21BF17EC000B706C /* Debug */,
 				0A88186F21BF17EC000B706C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A88187021BF17EC000B706C /* Build configuration list for PBXNativeTarget "EverestToursTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A88187121BF17EC000B706C /* Debug */,
-				0A88187221BF17EC000B706C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

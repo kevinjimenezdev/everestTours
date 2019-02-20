@@ -18,4 +18,10 @@ class AppTabBarViewController: UITabBarController {
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.setHidesBackButton(true, animated: false)
     }
+    
+    enum tabIndexes: Int {
+        case calendar = 0
+        case reservations = 1
+        case profile = 2
+    }
 }

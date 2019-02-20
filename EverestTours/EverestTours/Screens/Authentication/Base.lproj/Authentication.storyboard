@@ -22,7 +22,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cRW-8Q-uzf"/>
                     <connections>
-                        <segue destination="NMM-x6-onN" kind="show" identifier="calendar" animates="NO" id="fIH-i7-umb"/>
+                        <segue destination="NMM-x6-onN" kind="show" identifier="appTabBar" animates="NO" id="fIH-i7-umb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

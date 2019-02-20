@@ -32,8 +32,8 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A88186321BF17EC000B706C"
-               BuildableName = "EverestToursTests.xctest"
+               BlueprintIdentifier = "0A512D6B22175C1F003AC270"
+               BuildableName = "EverestToursTests"
                BlueprintName = "EverestToursTests"
                ReferencedContainer = "container:EverestTours.xcodeproj">
             </BuildableReference>
