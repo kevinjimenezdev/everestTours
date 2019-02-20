@@ -15,13 +15,6 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     var userManager: UserManager?
-    //only for testing
-    var currentError: Error?
-
-    //called in the init for example
-    func injectUserManager(userManager: UserManager) {
-        self.userManager = userManager
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,34 +32,27 @@ class ProfileViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    
     @IBAction func save(_ sender: Any) {
         let profile = UserProfile(email: emailTextField.text, name: nameTextField.text, phone: phoneTextField.text, image: profileImageView.image)
         let user = User(profile: profile)
-       userManager?.saveUser(user: user) { error in
-            if (error != nil) {
-                self.currentError = error
-            }
+        UserManager.sharedInstance.saveUser(user: user) { error in
+            //TODO:handling error
         }
     }
     
-//    @IBAction func save(_ sender: Any) {
-//        let profile = UserProfile(email: emailTextField.text, name: nameTextField.text, phone: phoneTextField.text, image: profileImageView.image)
-//        let user = User(profile: profile)
-//        UserManager.sharedInstance.saveUser(user: user) { error in
-//            //TODO:handling error
-//        }
-//    }
-    
     func loadUserData() {
         UserManager.sharedInstance.getUser() { user, error in
+            //Error handling
             if let user = user {
                 self.emailTextField.text = user.profile?.email
                 self.nameTextField.text = user.profile?.name
                 self.phoneTextField.text = user.profile?.phone
                 self.profileImageView.image = user.profile?.getProfileImage()
-                //TODO: handling error
             } else {
                 self.emailTextField.text = FUIAuthenticationManager.shared.AuthDataResult?.user.email
+                self.nameTextField.text = FUIAuthenticationManager.shared.AuthDataResult?.user.displayName
+                self.phoneTextField.text = FUIAuthenticationManager.shared.AuthDataResult?.user.phoneNumber
             }
         }
     }
