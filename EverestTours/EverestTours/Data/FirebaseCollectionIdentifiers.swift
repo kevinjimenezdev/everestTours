@@ -10,4 +10,6 @@ import Foundation
 
 struct FirebaseCollectionIdentifiers {
     static let userAccount = "userAccount"
+    static let tour = "tour"
+    static let guide = "guide"
 }

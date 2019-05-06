@@ -15,13 +15,12 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var monthLabel: UILabel!
     
-    var calendarDateRage: DateRage?
+    var calendarDateRage: DateRage? = CalendarConstants.calendarDateRage
     var date: Date?
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        calendarDateRage = TourManager.getAvailableTourDates()
         calendarView.visibleDates { (visibleDates) in
             self.setDateLabels(visibleDates)
         }
@@ -29,8 +28,8 @@ class CalendarViewController: UIViewController {
     
     func setDateLabels(_ visibleDates: DateSegmentInfo) {
         let currentDate = visibleDates.monthDates.first!.date
-        yearLabel.text = AppDateFormatter.getYearName(of: currentDate)
-        monthLabel.text = AppDateFormatter.getMonthName(of: currentDate)
+        yearLabel.text = AppDateFormatter.getYearName(of: currentDate.millisecondsSince1970)
+        monthLabel.text = AppDateFormatter.getMonthName(of: currentDate.millisecondsSince1970)
     }
     
     func presentTourList(for date: Date) {

@@ -10,12 +10,15 @@ import Foundation
 
 class User: Codable {
     var profile: UserProfile?
+    var reservations: [Reservation]?
     
-    init(profile: UserProfile?){
+    init(profile: UserProfile?, reservations: [Reservation]? = []){
         self.profile = profile
+        self.reservations = reservations
     }
     private enum CodingKeys: String, CodingKey {
         case profile
+        case reservations
     }
 }
 

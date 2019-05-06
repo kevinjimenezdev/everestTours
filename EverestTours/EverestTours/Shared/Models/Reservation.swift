@@ -8,10 +8,17 @@
 
 import Foundation
 
-struct Reservation {
-    var reservedSpots: Int
+struct Reservation: Codable {
+    var tourId: String?
+    var reservedSpots: Int?
     
-    init(reservedSports: Int) {
+    init(tourId:String, reservedSports: Int) {
+        self.tourId = tourId
         self.reservedSpots = reservedSports
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case reservedSpots = "reserved_spots"
+        case tourId = "tour_id"
     }
 }

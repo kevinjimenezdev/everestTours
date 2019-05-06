@@ -16,8 +16,14 @@ class TourListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         if let date = date {
-            tours = TourManager.getAvailableTours(for: date, target: self)
+            TourManager().getToursFor(date: date.millisecondsSince1970, completion: { (tours, error) in
+                self.tours = tours
+                self.tableView.reloadData()
+            })
         }
     }
 

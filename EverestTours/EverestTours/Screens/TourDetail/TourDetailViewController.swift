@@ -32,6 +32,8 @@ class TourDetailViewController: UIViewController {
     var tour: Tour?
     let routeTableDelegate = RouteTableDelegate()
     var isCheckingReservation = false
+    let tourManager = TourManager.sharedInstance
+    var reservation: Reservation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,17 +44,22 @@ class TourDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if let tourId = tourId {
-            tour = TourManager.getInformation(forTour: tourId, target: self)
-            updateTourView()
-        }
-        if isCheckingReservation {
-            if let userId = FUIAuthenticationManager.shared.AuthDataResult?.user.email, let tour = tour {
-                reservedInfoView.isHidden = false
-                reserveSpotView.isHidden = true
-                reserveSpotViewHeight.constant = 0
-                TourManager.getReservationFor(userId: userId, with: tour) { (reservation) in
-                    if let reservatedSpots = reservation?.reservedSpots {
-                        reservedSpotsLabel.text = String(reservatedSpots)
+            tourManager.getTourByIdentifier(identifier: tourId) { (matchTours, error) in
+                self.tour = matchTours?[0]
+                self.updateTourView()
+                if self.isCheckingReservation {
+                    if let userId = FUIAuthenticationManager.shared.AuthDataResult?.user.email, let tour = self.tour {
+                        self.reservedInfoView.isHidden = false
+                        self.reserveSpotView.isHidden = true
+                        self.reserveSpotViewHeight.constant = 0
+                        UserManager.currentUser?.reservations?.forEach({ (reservation) in
+                            if reservation.tourId == tour.identifier {
+                                if let spots = reservation.reservedSpots {
+                                    self.reservation = reservation
+                                    self.reservedSpotsLabel.text = String(spots)
+                                }
+                            }
+                        })
                     }
                 }
             }
@@ -60,9 +67,9 @@ class TourDetailViewController: UIViewController {
     }
     
     func updateTourView() {
-        if let tour = tour {
-            hourLabel.text = AppDateFormatter.getHourString(of: tour.date)
-            guideNameLabel.text = tour.guide.name
+        if let tour = tour, let date = tour.date {
+            hourLabel.text = AppDateFormatter.getHourString(of: date)
+            guideNameLabel.text = tour.guideName
             routeTableDelegate.route = tour.route
             routeTable.reloadData()
             routeTableHeight.constant = routeTable.contentSize.height
@@ -72,13 +79,19 @@ class TourDetailViewController: UIViewController {
     @IBAction func reserveSpot(_ sender: Any) {
         let quantity = Int(reservationSpots.text ?? "0")
         let commentary = commentaryTextView.text
-        if let tour = tour, let quantity = quantity {
-            TourManager.reserveSpots(forTour: tour, quantity: quantity, commentary: commentary, target: self)
+        if let tourId = tour?.identifier, let quantity = quantity {
+            tourManager.reserveSpot(inTourID: tourId, quantity: quantity) { (success, error) in
+                
+            }
         }
     }
     
     @IBAction func cancelReservation(_ sender: Any) {
-        
+        if let reservation = reservation {
+            TourManager.sharedInstance.cancel(reservation: reservation) { (success,error) in
+                
+            }
+        }
     }
 }
 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cPX-aM-InQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Guide Collection View Controller-->
+        <scene sceneID="vEd-F2-F6K">
+            <objects>
+                <collectionViewController id="cPX-aM-InQ" customClass="GuideCollectionViewController" customModule="EverestTours" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="8yX-Du-cIB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uf1-bw-bWe">
+                            <size key="itemSize" width="210" height="215"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GuideCollectionViewCell" id="rvY-RL-RUY" customClass="GuideCollectionViewCell" customModule="EverestTours" customModuleProvider="target">
+                                <rect key="frame" x="82.5" y="0.0" width="210" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="210" height="215"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-pk-5aJ">
+                                            <rect key="frame" x="81.5" y="18" width="47" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" red="0.23644190335206261" green="0.43908629444873093" blue="0.39766316771494475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dw-vn-sNk">
+                                            <rect key="frame" x="13" y="44" width="187" height="122"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="122" id="fIY-lk-n9W"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tours given:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUF-dB-kX0">
+                                            <rect key="frame" x="13" y="174" width="93" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnY-su-LEk">
+                                            <rect key="frame" x="111" y="174" width="11.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="bwT-pk-5aJ" firstAttribute="top" secondItem="rvY-RL-RUY" secondAttribute="topMargin" constant="-10" id="1Rl-au-x32"/>
+                                    <constraint firstItem="bwT-pk-5aJ" firstAttribute="centerX" secondItem="rvY-RL-RUY" secondAttribute="centerX" id="5lr-ZU-1iw"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="xnY-su-LEk" secondAttribute="bottom" constant="12" id="FYb-zf-qhk"/>
+                                    <constraint firstItem="3dw-vn-sNk" firstAttribute="leading" secondItem="rvY-RL-RUY" secondAttribute="leadingMargin" constant="5" id="Iby-ZY-xTj"/>
+                                    <constraint firstItem="3dw-vn-sNk" firstAttribute="top" secondItem="bwT-pk-5aJ" secondAttribute="bottom" constant="5" id="Mes-k7-9sf"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="3dw-vn-sNk" secondAttribute="trailing" constant="2" id="PkY-vQ-Jzh"/>
+                                    <constraint firstItem="xnY-su-LEk" firstAttribute="leading" secondItem="XUF-dB-kX0" secondAttribute="trailing" constant="5" id="b6d-st-TgZ"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="XUF-dB-kX0" secondAttribute="bottom" constant="12" id="loU-ss-NvR"/>
+                                    <constraint firstItem="XUF-dB-kX0" firstAttribute="leading" secondItem="rvY-RL-RUY" secondAttribute="leadingMargin" constant="5" id="xIb-Qb-5RM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="3dw-vn-sNk" id="ivz-vx-Xhb"/>
+                                    <outlet property="nameLabel" destination="bwT-pk-5aJ" id="JuP-mf-5eD"/>
+                                    <outlet property="toursGivenLabel" destination="xnY-su-LEk" id="1qm-oU-a07"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="cPX-aM-InQ" id="aDQ-It-1ja"/>
+                            <outlet property="delegate" destination="cPX-aM-InQ" id="iDS-Gz-qsc"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsk-MS-zgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2372" y="35.532233883058474"/>
+        </scene>
+    </scenes>
+</document>

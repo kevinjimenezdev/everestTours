@@ -16,28 +16,28 @@ class AppDateFormatter {
         return formatter
     }()
 
-    class func getDate(for date: String) -> Date? {
+    class func getDate(for date: String) -> Double? {
         formatter.dateFormat = AppDateFormatterConstants.fullDateFormat
-        return formatter.date(from: date)
+        return formatter.date(from: date)?.millisecondsSince1970
     }
     
-    class func getShortDateName(for date: Date) -> String {
+    class func getShortDateName(for date: Double) -> String {
         formatter.dateFormat = AppDateFormatterConstants.fullDateFormat
-        return formatter.string(from: date)
+        return formatter.string(from: Date(milliseconds: date))
     }
     
-    class func getYearName(of date: Date) -> String {
+    class func getYearName(of date: Double) -> String? {
         formatter.dateFormat = AppDateFormatterConstants.yearNameFormat
-        return formatter.string(from: date)
+        return formatter.string(from: Date(milliseconds: date))
     }
     
-    class func getMonthName(of date: Date) -> String {
+    class func getMonthName(of date: Double) -> String {
         formatter.dateFormat = AppDateFormatterConstants.monthNameFormat
-        return formatter.string(from: date)
+        return formatter.string(from: Date(milliseconds: date))
     }
     
-    class func getHourString(of date: Date) -> String {
+    class func getHourString(of date: Double) -> String {
         formatter.dateFormat = AppDateFormatterConstants.hourStringFormat
-        return formatter.string(from: date)
+        return formatter.string(from: Date(milliseconds: date))
     }
 }

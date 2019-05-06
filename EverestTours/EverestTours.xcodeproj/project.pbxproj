@@ -19,6 +19,7 @@
 		0A04354821CBEED00020F17D /* RouteTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A04354721CBEED00020F17D /* RouteTableDelegate.swift */; };
 		0A0F8899220B3B6600657993 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0F8898220B3B6600657993 /* UserProfile.swift */; };
 		0A1FD33B2211DA370045D5C6 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FD33A2211DA370045D5C6 /* ImageProcessing.swift */; };
+		0A2DC63D225166EB0002DFAA /* TourFSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2DC63C225166EB0002DFAA /* TourFSModel.swift */; };
 		0A40229B21BF236600B9CC8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A40229A21BF236600B9CC8F /* GoogleService-Info.plist */; };
 		0A516E8721E7FF8F0093E358 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A516E8621E7FF8F0093E358 /* Reservation.swift */; };
 		0A856A4021DFEE0D0065D29F /* AuthenticacionConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A856A3F21DFEE0D0065D29F /* AuthenticacionConstants.swift */; };
@@ -46,12 +47,17 @@
 		0AA8F38C21C02BD400ED5501 /* FUICustomMethodPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8F38B21C02BD400ED5501 /* FUICustomMethodPickerView.xib */; };
 		0AA8F39621C051DC00ED5501 /* FUIAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8F39521C051DC00ED5501 /* FUIAuthenticationManager.swift */; };
 		0AA8F39821C053D200ED5501 /* FUIAuthenticationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8F39721C053D200ED5501 /* FUIAuthenticationConstants.swift */; };
+		0AC73F1022809B560083D645 /* GuideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC73F0F22809B560083D645 /* GuideManager.swift */; };
+		0ACA8E7D2228D6EC0095E3EA /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACA8E7C2228D6EC0095E3EA /* Date.swift */; };
 		0ADC4F7521C413F40046684E /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7421C413F40046684E /* Calendar.storyboard */; };
 		0ADC4F7721C416730046684E /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7621C416730046684E /* CalendarCell.swift */; };
 		0ADC4F7921C4183B0046684E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7821C4183A0046684E /* CalendarViewController.swift */; };
 		0ADC4F7C21C419070046684E /* AppDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7B21C419070046684E /* AppDateFormatter.swift */; };
 		0ADC4F7E21C419FA0046684E /* AppDateFormatterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7D21C419FA0046684E /* AppDateFormatterConstants.swift */; };
 		0ADC4F8021C41F0C0046684E /* CalendarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADC4F7F21C41F0C0046684E /* CalendarConstants.swift */; };
+		0AF0923A227FA43400B2EC8A /* GuideCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF09239227FA43400B2EC8A /* GuideCollection.storyboard */; };
+		0AF0923C227FA46000B2EC8A /* GuideCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0923B227FA46000B2EC8A /* GuideCollectionViewController.swift */; };
+		0AF0923E227FA4EF00B2EC8A /* GuideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0923D227FA4EF00B2EC8A /* GuideCollectionViewCell.swift */; };
 		0AFED59121C9D68E00DD2535 /* TourList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFED59021C9D68E00DD2535 /* TourList.storyboard */; };
 		0AFED59321C9D6A500DD2535 /* TourListConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED59221C9D6A500DD2535 /* TourListConstants.swift */; };
 		0AFED59521C9D6D600DD2535 /* TourListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFED59421C9D6D600DD2535 /* TourListViewController.swift */; };
@@ -77,6 +83,7 @@
 		0A04354721CBEED00020F17D /* RouteTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTableDelegate.swift; sourceTree = "<group>"; };
 		0A0F8898220B3B6600657993 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		0A1FD33A2211DA370045D5C6 /* ImageProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessing.swift; sourceTree = "<group>"; };
+		0A2DC63C225166EB0002DFAA /* TourFSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourFSModel.swift; sourceTree = "<group>"; };
 		0A40229A21BF236600B9CC8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A40229C21BF3BA500B9CC8F /* EverestTours.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EverestTours.entitlements; sourceTree = "<group>"; };
 		0A516E8621E7FF8F0093E358 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
@@ -107,12 +114,17 @@
 		0AA8F38B21C02BD400ED5501 /* FUICustomMethodPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FUICustomMethodPickerView.xib; sourceTree = "<group>"; };
 		0AA8F39521C051DC00ED5501 /* FUIAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUIAuthenticationManager.swift; sourceTree = "<group>"; };
 		0AA8F39721C053D200ED5501 /* FUIAuthenticationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUIAuthenticationConstants.swift; sourceTree = "<group>"; };
+		0AC73F0F22809B560083D645 /* GuideManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideManager.swift; sourceTree = "<group>"; };
+		0ACA8E7C2228D6EC0095E3EA /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0ADC4F7421C413F40046684E /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		0ADC4F7621C416730046684E /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		0ADC4F7821C4183A0046684E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		0ADC4F7B21C419070046684E /* AppDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDateFormatter.swift; sourceTree = "<group>"; };
 		0ADC4F7D21C419FA0046684E /* AppDateFormatterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDateFormatterConstants.swift; sourceTree = "<group>"; };
 		0ADC4F7F21C41F0C0046684E /* CalendarConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarConstants.swift; sourceTree = "<group>"; };
+		0AF09239227FA43400B2EC8A /* GuideCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuideCollection.storyboard; sourceTree = "<group>"; };
+		0AF0923B227FA46000B2EC8A /* GuideCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCollectionViewController.swift; sourceTree = "<group>"; };
+		0AF0923D227FA4EF00B2EC8A /* GuideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AFED59021C9D68E00DD2535 /* TourList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TourList.storyboard; sourceTree = "<group>"; };
 		0AFED59221C9D6A500DD2535 /* TourListConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListConstants.swift; sourceTree = "<group>"; };
 		0AFED59421C9D6D600DD2535 /* TourListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourListViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +232,7 @@
 				0A8AC03A220CAE7D002D25C1 /* Data.swift */,
 				0A8AC046220CF3BD002D25C1 /* Encodable.swift */,
 				0A8AC04A220DF44A002D25C1 /* Decodable.swift */,
+				0ACA8E7C2228D6EC0095E3EA /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				0A8AC03E220CD505002D25C1 /* FSModel.swift */,
+				0A2DC63C225166EB0002DFAA /* TourFSModel.swift */,
 			);
 			path = FSModels;
 			sourceTree = "<group>";
@@ -297,6 +311,7 @@
 		0AA8F39121C0509B00ED5501 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0AF09238227FA40900B2EC8A /* GuideCollection */,
 				0A00326B21ECFAB900E27A4C /* Profile */,
 				0A00326421ECDD7900E27A4C /* AppTabBar */,
 				0AA8816221E65761008F1189 /* TourReservationList */,
@@ -357,6 +372,16 @@
 			path = Dates;
 			sourceTree = "<group>";
 		};
+		0AF09238227FA40900B2EC8A /* GuideCollection */ = {
+			isa = PBXGroup;
+			children = (
+				0AF09239227FA43400B2EC8A /* GuideCollection.storyboard */,
+				0AF0923B227FA46000B2EC8A /* GuideCollectionViewController.swift */,
+				0AF0923D227FA4EF00B2EC8A /* GuideCollectionViewCell.swift */,
+			);
+			path = GuideCollection;
+			sourceTree = "<group>";
+		};
 		0AFED58F21C9D66F00DD2535 /* TourList */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +399,7 @@
 				0AFED59721C9D80100DD2535 /* TourManager.swift */,
 				0AFED59921C9D93500DD2535 /* NetworkManager.swift */,
 				0A04353B21CB10E30020F17D /* UserManager.swift */,
+				0AC73F0F22809B560083D645 /* GuideManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -484,6 +510,7 @@
 				0A88185E21BF17EC000B706C /* LaunchScreen.storyboard in Resources */,
 				0AA8F38C21C02BD400ED5501 /* FUICustomMethodPickerView.xib in Resources */,
 				0A40229B21BF236600B9CC8F /* GoogleService-Info.plist in Resources */,
+				0AF0923A227FA43400B2EC8A /* GuideCollection.storyboard in Resources */,
 				0A88185B21BF17EC000B706C /* Assets.xcassets in Resources */,
 				0AFED59121C9D68E00DD2535 /* TourList.storyboard in Resources */,
 				0AA8816421E65787008F1189 /* TourReservationList.storyboard in Resources */,
@@ -610,6 +637,7 @@
 				0AA8F39821C053D200ED5501 /* FUIAuthenticationConstants.swift in Sources */,
 				0A856A4021DFEE0D0065D29F /* AuthenticacionConstants.swift in Sources */,
 				0A8AC038220CADEF002D25C1 /* UIImage.swift in Sources */,
+				0AF0923C227FA46000B2EC8A /* GuideCollectionViewController.swift in Sources */,
 				0A8AC045220CED39002D25C1 /* AppError.swift in Sources */,
 				0A8AC03B220CAE7D002D25C1 /* Data.swift in Sources */,
 				0ADC4F7721C416730046684E /* CalendarCell.swift in Sources */,
@@ -618,8 +646,11 @@
 				0A04354121CB15190020F17D /* SharedConstants.swift in Sources */,
 				0A8AC033220B8FCF002D25C1 /* FirestoreManager.swift in Sources */,
 				0A1FD33B2211DA370045D5C6 /* ImageProcessing.swift in Sources */,
+				0A2DC63D225166EB0002DFAA /* TourFSModel.swift in Sources */,
 				0AA8F39621C051DC00ED5501 /* FUIAuthenticationManager.swift in Sources */,
 				0A88185921BF17EA000B706C /* EverestTours.xcdatamodeld in Sources */,
+				0ACA8E7D2228D6EC0095E3EA /* Date.swift in Sources */,
+				0AC73F1022809B560083D645 /* GuideManager.swift in Sources */,
 				0A00326F21ED018800E27A4C /* ProfileViewController.swift in Sources */,
 				0A8AC036220CAD90002D25C1 /* String.swift in Sources */,
 				0AA8F38A21C02AA100ED5501 /* FUICustomMethodPickerViewController.swift in Sources */,
@@ -629,6 +660,7 @@
 				0A00326A21ECEF0800E27A4C /* AppTabBarViewController.swift in Sources */,
 				0A04354821CBEED00020F17D /* RouteTableDelegate.swift in Sources */,
 				0AFED59321C9D6A500DD2535 /* TourListConstants.swift in Sources */,
+				0AF0923E227FA4EF00B2EC8A /* GuideCollectionViewCell.swift in Sources */,
 				0AA8816821E6655A008F1189 /* TourReservationTableCell.swift in Sources */,
 				0A8AC043220CEAC9002D25C1 /* User.swift in Sources */,
 				0AFED59A21C9D93500DD2535 /* NetworkManager.swift in Sources */,

@@ -25,7 +25,8 @@ class TourReservationTableCell: UITableViewCell {
     
     func setTourReservation(tour: Tour) {
         nameLabel.text = tour.startsAt
-        dateLabel.text =  AppDateFormatter.getYearName(of: tour.date)
+        if let date = tour.date {
+            dateLabel.text =  AppDateFormatter.getYearName(of: date)
+        }
     }
-
 }

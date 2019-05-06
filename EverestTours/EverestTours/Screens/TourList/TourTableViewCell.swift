@@ -28,8 +28,10 @@ class TourTableViewCell: UITableViewCell {
     
     func setTour(_ tour: Tour) {
         self.tour = tour
-        hourMinuteLabel.text = AppDateFormatter.getHourString(of: tour.date)
-//        guideNameLabel.text = tour.guide
+        if let date = tour.date {
+            hourMinuteLabel.text = AppDateFormatter.getHourString(of: date)
+        }
+        guideNameLabel.text = tour.guideName
         destinationLabel.text = tour.startsAt
     }
 }

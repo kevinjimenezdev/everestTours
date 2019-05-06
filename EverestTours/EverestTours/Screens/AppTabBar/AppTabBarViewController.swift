@@ -9,6 +9,8 @@
 import UIKit
 
 class AppTabBarViewController: UITabBarController {
+    
+    let segueToGuideidentifier = "segueToGuides"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +19,11 @@ class AppTabBarViewController: UITabBarController {
     }
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.setHidesBackButton(true, animated: false)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Guides", style: .plain, target: self, action: #selector(segueToGuides))
+    }
+    
+    @objc func segueToGuides() {
+        performSegue(withIdentifier: segueToGuideidentifier, sender: self)
     }
     
     enum tabIndexes: Int {

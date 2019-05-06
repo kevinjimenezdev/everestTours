@@ -18,8 +18,10 @@ class TourReservationListViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        tours = TourManager.getUserReservations()
-        tableView.reloadData()
+        TourManager.sharedInstance.getUserReservedTours { (tours, error) in
+            self.tours = tours
+            self.tableView.reloadData()
+        }
     }
 
     // MARK: - Table view data source
